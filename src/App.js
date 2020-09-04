@@ -19,7 +19,7 @@ class App extends Component {
       return (
         <div className="App"> 
           <Switch>
-            <Route exact path='/reactHooks-cartelera-cinema' component={Home}/>
+            <Route exact path='/' component={Home}/>
             <Route path='/detail/:movieId' component={Detail}/>
             <Route component={Home}/>
           </Switch>
