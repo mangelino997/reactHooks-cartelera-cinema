@@ -21,12 +21,13 @@ class App extends Component {
           <Router basename="/reactHooks-cartelera-cinema">
             <Link to='/' />
             <Link to='/detail/:movieId' />
-          </Router>
-          <Switch base>
-            <Route exact path='/reactHooks-cartelera-cinema' component={Home}/>
+            <Switch >
+            <Route exact path='/' component={Home}/>
             <Route path='/detail/:movieId' component={Detail}/>
             <Route component={NotFound}/>
           </Switch>
+          </Router>
+          
         </div>
       )
   }
