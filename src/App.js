@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route , BrowserRouter as Router, Link,} from "react-router-dom";
 import './App.css';
 import 'bulma/css/bulma.css'
 import Detail from './paginas/Detail'
@@ -18,7 +18,11 @@ class App extends Component {
       //Con Switch y Route se manejan las rutas de forma 'declarativa'
       return (
         <div className="App"> 
-          <Switch>
+          <Router basename="/reactHooks-cartelera-cinema">
+            <Link to='/' />
+            <Link to='/detail/:movieId' />
+          </Router>
+          <Switch base>
             <Route exact path='/reactHooks-cartelera-cinema' component={Home}/>
             <Route path='/detail/:movieId' component={Detail}/>
             <Route component={NotFound}/>
@@ -26,7 +30,12 @@ class App extends Component {
         </div>
       )
   }
-
+/* 
+<Switch base>
+            <Route exact path='/reactHooks-cartelera-cinema' component={Home}/>
+            <Route path='/detail/:movieId' component={Detail}/>
+            <Route component={NotFound}/>
+          </Switch>*/
   
 }
 
