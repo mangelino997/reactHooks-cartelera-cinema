@@ -9,6 +9,8 @@ export class MoviesList extends Component {
     }
 
     render() {
+        //accedemos a movies de las props que nos llegan, mediante las llaves
+        //esto en nuevo en javascript
         const { movies } = this.props
         return (
 

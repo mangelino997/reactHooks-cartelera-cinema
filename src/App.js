@@ -21,8 +21,6 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/detail/:movieId' component={Detail}/>
-            /* al incluir esta ruta como la ultima le indicamos a React router
-            que esta ruta se tiene que cargar siempre que no se encuente otra ruta  */
             <Route component={NotFound}/>
           </Switch>
         </div>

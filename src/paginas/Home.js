@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { Title } from '../componentes/titulo'
 import { SearchForm } from '../componentes/SearchForm'
 import { MoviesList } from '../componentes/MoviesList'
@@ -25,6 +25,7 @@ export default function Home() {
             <Title>Buscar película</Title>
             <div className="SearchForm">
                 <SearchForm onResults={handleResults} />
+                
             </div>
             {usedSerach ?
                 renderResults() :

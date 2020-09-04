@@ -20,6 +20,25 @@
   width: 33%;
 }
 
+.card-movie-background{
+	background: rgb(20,195,154);
+    background: -moz-linear-gradient(90deg, rgba(20,195,154,1) 0%, rgba(65,136,224,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(20,195,154,1) 0%, rgba(65,136,224,1) 100%);
+    background: linear-gradient(90deg, rgba(20,195,154,1) 0%, rgba(65,136,224,1) 100%);
+}
+.card-border-radius{
+	border-radius: 5px;
+}
+
+.img-movie-radius{
+	border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.movie-title{
+	font-size: 1.5rem;
+    color: white;
+}
 
 /* ESTILOS */
 *{
@@ -30,7 +49,8 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+	overflow: hidden;
+	
 }
 
 .wave{

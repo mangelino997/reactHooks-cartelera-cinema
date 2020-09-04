@@ -16,13 +16,13 @@ export class SearchForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         const { inputMovie } = this.state
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
+        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`) //con axios me ahorro los .then (ahorra codigo)
             .then(res =>
                 res.json())
             .then(
                 results => {
                     // extrae los parametros Search y TotalResults 
-                    const { Search = [], TotalResults = "0" } = results
+                    const { Search = []} = results
                     //comprueba que si el resultado es 'undefined' el array quede vacío
                     // le manda a App.js como props el metodo que actualizara el state results
                     this.props.onResults(Search)

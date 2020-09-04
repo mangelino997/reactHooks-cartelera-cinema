@@ -15,25 +15,20 @@ export class Movie extends Component {
         const { id, poster, title, year } = this.props
 
         return (
-                <Link to={`/detail/${id}`} className="card">
+                <Link to={`/detail/${id}`} className="card card-border-radius card-movie-background">
                     <div className="card-image">
                         <figure className="image is-4by3">
-                            <img src={poster} alt={title} />
+                            <img src={poster} alt={title} className="img-movie-radius"/>
                         </figure>
                     </div>
                     <div className="card-content">
                         <div className="media">
-                            <div className="media-left">
-                                <figure className="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="" />
-                                </figure>
-                            </div>
                             <div className="media-content">
-                                <p className="title is-4">{title}</p>
+                                <p className="movie-title">{title}</p>
                             </div>
                         </div>
                         <div className="content">
-                            <time>{year}</time>
+                            <time className="movie-title">{year}</time>
                         </div>
                     </div>
             </Link>
