@@ -18,11 +18,11 @@ class App extends Component {
       //Con Switch y Route se manejan las rutas de forma 'declarativa'
       return (
         <div className="App"> 
-          <Switch>
+          
             <Route exact path='/' component={Home}/>
             <Route path='/detail/:movieId' component={Detail}/>
             <Route component={NotFound}/>
-          </Switch>
+          
         </div>
       )
   }
