@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/reactHooks-cartelera-cinema/precache-manifest.bc9a7167f26b6fbe362d638a075da9bb.js"
+  "/reactHooks-cartelera-cinema/precache-manifest.5adf77eb698c17a95a90cfb885ff87b8.js"
 );
 
 self.addEventListener('message', (event) => {
